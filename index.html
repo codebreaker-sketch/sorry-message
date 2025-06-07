@@ -3,35 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>For My Bubu</title>
+  <title>I'm Sorry Bubu 💗</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #f3e7e9 0%, #e3eeff 100%);
+      background: linear-gradient(180deg, #f3e7e9 0%, #e3eeff 100%);
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #2c2c2c;
+      overflow-x: hidden;
+    }
+
+    .section {
+      min-height: 100vh;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      color: #2c2c2c;
-      overflow: hidden;
+      padding: 60px 20px;
+      text-align: center;
     }
 
     .card {
       background: rgba(255, 255, 255, 0.7);
       backdrop-filter: blur(20px);
       border-radius: 25px;
-      padding: 50px 40px;
-      max-width: 500px;
+      padding: 40px 30px;
+      max-width: 600px;
+      width: 90%;
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-      text-align: center;
       animation: fadeIn 2s ease;
-      position: relative;
     }
 
     h1 {
-      font-size: 2.3em;
+      font-size: 2.5em;
       color: #ff6f91;
       margin-bottom: 10px;
     }
@@ -44,10 +53,10 @@
     }
 
     p {
-      font-size: 1.1em;
+      font-size: 1.15em;
       line-height: 1.8;
+      margin: 15px 0;
       color: #3a3a3a;
-      margin: 10px 0;
     }
 
     .blush {
@@ -93,43 +102,59 @@
     }
 
     .footer {
-      margin-top: 30px;
+      margin-top: 40px;
       font-size: 0.9em;
       color: #999;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <div class="heart">💗</div>
-    <h1>I'm So Sorry, Bubu, My haleema, Soulmate</h1>
-    <p class="blush">*looks down, feeling guilty*</p>
-      I know I messed up, and I can’t stop thinking about how much I hurt you.
-    <p class="blush">*blushes & looks down, Please Forgive your Washi, Your bebo..*</p>
-    <p>
-      I know I messed up...<br>
-      I don't know how to express the ache I feel knowing I hurt you.
-    </p>
-    <p>
-      You're not just someone I love—<br>
-      you're the piece of my soul I’m most afraid to lose.
-    </p>
-    <p>
-      I respect you, I cherish you, and yes...<br>
-      I'm selfish about you because you're my everything.
-    </p>
-    <p>
-      Please forgive this foolish heart that only beats for you. 💌
-    </p>
-    <button onclick="showLove()">Forgive Me?</button>
-    <div class="message" id="loveMsg">Thank you, my Bubu. I’ll protect your heart with mine forever. 💕</div>
-    <div class="footer">– with all my heart, Wasay</div>
-  </div>
+
+  <section class="section">
+    <div class="card">
+      <div class="heart">💗</div>
+      <h1>I'm Sorry, Bubu</h1>
+      <p class="blush">*blushes quietly, avoids eye contact*</p>
+      <p>I know... I messed up.</p>
+      <p>I’ve been overthinking it a hundred times, and each time, it hurts more knowing I hurt you.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="card">
+      <p>
+        You're not just my person... you're my **home**, my **anchor**, my **everything**.<br>
+        And I feel small without you.
+      </p>
+      <p>
+        I respect you deeply, Bubu.<br>
+        More than anything else, I want you to feel safe and valued — always.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="card">
+      <p>
+        I’m possessive because I’m terrified of losing you.<br>
+        You mean more to me than words can ever really say.
+      </p>
+      <p>
+        Please, forgive this heart that belongs only to you. 💌
+      </p>
+      <button onclick="showLove()">Forgive Me?</button>
+      <div class="message" id="loveMsg">Thank you, my Bubu. You’ll always have all of me. 💕</div>
+    </div>
+  </section>
+
+  <div class="footer">– with all my heart, Wasay</div>
 
   <script>
     function showLove() {
       document.getElementById("loveMsg").style.display = "block";
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     }
   </script>
 </body>
 </html>
+
