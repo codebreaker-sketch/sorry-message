@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For My Bubu</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f3e7e9 0%, #e3eeff 100%);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #2c2c2c;
+      overflow: hidden;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(20px);
+      border-radius: 25px;
+      padding: 50px 40px;
+      max-width: 500px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      animation: fadeIn 2s ease;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 2.3em;
+      color: #ff6f91;
+      margin-bottom: 10px;
+    }
+
+    .heart {
+      font-size: 3em;
+      color: #ff6f91;
+      animation: heartbeat 1.5s infinite;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      color: #3a3a3a;
+      margin: 10px 0;
+    }
+
+    .blush {
+      font-style: italic;
+      opacity: 0.7;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 12px 30px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 30px;
+      background: #ff6f91;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(255, 111, 145, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background: #e75a7c;
+      transform: scale(1.05);
+    }
+
+    .message {
+      display: none;
+      margin-top: 25px;
+      font-size: 1.2em;
+      color: #444;
+      font-weight: 500;
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="heart">💗</div>
+    <h1>I'm So Sorry, Bubu, My haleema, Soulmate</h1>
+    <p class="blush">*looks down, feeling guilty*</p>
+      I know I messed up, and I can’t stop thinking about how much I hurt you.
+    <p class="blush">*blushes & looks down, Please Forgive your Washi, Your bebo..*</p>
+    <p>
+      I know I messed up...<br>
+      I don't know how to express the ache I feel knowing I hurt you.
+    </p>
+    <p>
+      You're not just someone I love—<br>
+      you're the piece of my soul I’m most afraid to lose.
+    </p>
+    <p>
+      I respect you, I cherish you, and yes...<br>
+      I'm selfish about you because you're my everything.
+    </p>
+    <p>
+      Please forgive this foolish heart that only beats for you. 💌
+    </p>
+    <button onclick="showLove()">Forgive Me?</button>
+    <div class="message" id="loveMsg">Thank you, my Bubu. I’ll protect your heart with mine forever. 💕</div>
+    <div class="footer">– with all my heart, Wasay</div>
+  </div>
+
+  <script>
+    function showLove() {
+      document.getElementById("loveMsg").style.display = "block";
+    }
+  </script>
+</body>
+</html>
